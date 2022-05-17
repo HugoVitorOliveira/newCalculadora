@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerCalc">
+            <header>
+                <div id="pt1">newCalculator</div>
+                <div id="pt2"></div>
+                <div id="pt3"></div>     
+            </header>
+            <div class="clicks">
+                        <!-- numeros -->
+                <div style="order:1;"onclick="numeros('1')">1</div>
+                <div style="order:2;"onclick="numeros('2')">2</div>
+                <div style="order:3;"onclick="numeros('3')">3</div>
+                <div style="order:5;"onclick="numeros('4')">4</div>
+                <div style="order:6;"onclick="numeros('5')">5</div>
+                <div style="order:7;"onclick="numeros('6')">6</div>
+                <div style="order:9;"onclick="numeros('7')">7</div>
+                <div style="order:10;"onclick="numeros('8')">8</div>
+                <div style="order:11;"onclick="numeros('9')">9</div>     
+                <div style="order:14;"onclick="numeros('0')">0</div>
+                        <!-- operadores -->
+                <div style="order:8;"onclick="operadores('+')">+</div>
+                <div style="order:12;"onclick="operadores('-')">-</div>
+                <div style="order:4;"onclick="operadores('x')">x</div>
+                <div style="order: 15;"onclick="operadores('/')">÷</div>
+                        <!-- outros -->
+                <div style="order:16;"onclick="executar()">=</div>
+                <div style="order:13;"onclick="float()">.</div>
+            </div>
+            <div class="resetar">
+                <button onclick='resetar()'>Resetar!</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #73D2DE;
+}
+.container{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 100px;
+    width: 98%;
+    margin: 4px 0px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    align-self: center;
+    color: #D81159;
+    border-radius: 5px; 
+}
+.containerCalc{
+    width: 430px;
+    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #046E8F;
+    border-radius: 5px;
+}
+.clicks{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;   
+}
+.clicks div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    background-color: #0D0628;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 5px; 
+}
+.resetar{
+    width: 98%;
+    align-self: center;
+}
+.resetar button{
+    height: 65px;
+    width: 100%;
+    color: #D81159;
+    font-size: 20px;
+    letter-spacing: 8px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s;    
+}
+.clicks div:hover{
+    opacity: 80%;
+}
+.clicks div:hover , .resetar button:hover{
+    transform: translateY(-3px);
+    box-shadow:0 3px 3px rgba(0, 0, 0, 0.452);
+}
+
+@media (max-width: 600px){
+    .containerCalc{
+        width: 320px;
+    }
+    .clicks div{
+        width: 70px;
+        height: 70px;
+    }
+}
